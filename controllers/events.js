@@ -59,7 +59,7 @@ const update = (req, res) => {
 };
 
 const destroy = (req, res) => {
-    Event.findByIdAndDelete(req.params.id, (err, deletedEvents) => {
+    Event.findByIdAndDelete(req.params.id, (err, deletedEvent) => {
         if (err) {
             console.log('Error in events#destroy:', err)
 
